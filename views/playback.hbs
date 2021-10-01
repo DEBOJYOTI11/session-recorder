@@ -1,0 +1,12 @@
+<span style="text-align:center;font-size:26px">Playback</span>
+<ul class="people_list">
+  <h1>Live</h1>
+  {{#each data.live}}
+  <li><a style="text-decoration:none;cursor:pointer;padding:10px;font-size:22px" href="/playback/{{this}}">{{this}}</a></li>
+  {{/each}}
+  <h1>Sessions</h1>
+  {{#each data.sessions}}
+  <li><a style="text-decoration:none;cursor:pointer;padding:10px;font-size:22px" href="/playback/{{this}}">{{this}}</a></li>
+  {{/each}}
+
+</ul>

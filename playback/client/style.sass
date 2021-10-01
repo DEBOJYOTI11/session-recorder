@@ -1,0 +1,57 @@
+html,body
+    // overflow: auto
+    .slider
+        display: flex
+        padding: 10px
+        margin: 0 auto   
+    #playback-container
+        // background-color: rgba(0,0,0,0.2)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 0
+        transform: scale(0.8)  
+        #canvas
+            position: absolute
+            top: 0
+            left: 0 
+            // transform: scale(1.2)  
+        .cursor
+            width: 25px
+            transform: translate(0,0)
+            z-index: 2
+            position: absolute
+            top: 0
+            left: 0
+        .iframe
+            z-index: 1
+        .arrow-img
+            width: 50px
+            display: none
+            bottom: 0
+            right: 0
+            position: absolute
+        .click-alert-container
+            width: 50px
+            background-color: red
+            color: white
+            padding: 5px
+            transform: translate(0,0)
+            position: absolute
+            left: 0
+            top: 0
+            animation: fade-away 3s forwards
+            .tail
+                border-color: transparent
+                border-bottom-color: red
+                border-style: dashed dashed solid
+                border-width: 0 8.5px 8.5px
+                position: absolute
+                left: 20.5px
+                top: -9px
+                height: 0
+                width: 0
+@keyframes fade-away
+    to 
+        opacity: 0
+        
