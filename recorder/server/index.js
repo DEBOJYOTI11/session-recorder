@@ -81,15 +81,15 @@ const recorder = (redisClient, app) => {
 
 function getUser(us){
     // console.log("d"+us)
-    // sp =  us.split("=");
-    // console.log(sp)
-    // for(i=0;i<sp.length;i++){
-    //     console.log(i)
-    //     if(sp[i]=='wfx_unq'){
-    //         return splits[i+1];
-    //     }
-    // }
-    // console.log('dewd')
-    return "user1";
+    var sp =  us.split("=");
+    console.log(sp)
+    for(var i=0;i<sp.length;i++){
+        console.log(i)
+        if(sp[i]=='wfx_unq'){
+            return sp[i+1];
+        }
+    }
+    console.log('dewd')
+    return "";
 }
 module.exports = recorder;
